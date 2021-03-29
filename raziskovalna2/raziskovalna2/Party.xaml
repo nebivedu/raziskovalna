@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="raziskovalna2.Party">
+    <ContentPage.Content BackgroundColor="Black" >
+        <StackLayout BackgroundColor="Black" Padding="0,40,0,20" >
+            <Label Text="Create a party key" VerticalOptions="Center" TextColor="White" FontSize="24" HorizontalOptions="Center" Padding="0,40,0,20" />
+            <Entry Placeholder="Name of the party" x:Name="partyNameCreate" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Gray" WidthRequest="200"/>
+            <Button Text="Create party" 
+                    Clicked="Button_Clicked"
+                    WidthRequest="150" HeightRequest="50"
+                    BackgroundColor="#24bcd4"
+                    VerticalOptions="Center" HorizontalOptions="Center"
+                    />
+
+            <Label Text="Join an already existing party" VerticalOptions="Center"  TextColor="White" FontSize="24" HorizontalOptions="Center" Padding="0,40,0,20"/>
+            <Entry Placeholder="Name of the party" x:Name="partyNameJoin" VerticalOptions="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center" BackgroundColor="Gray" WidthRequest="200" />
+            <Button Text="Join party" 
+                    Clicked="Button_Clicked_1"
+                    WidthRequest="150" HeightRequest="50"
+                    BackgroundColor="#24bcd4"
+                    
+                    VerticalOptions="Center" HorizontalOptions="Center"
+                    />
+            
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

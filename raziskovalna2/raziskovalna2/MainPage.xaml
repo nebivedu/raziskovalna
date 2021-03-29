@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="raziskovalna2.MainPage"
+            BackgroundColor="Black" >
+
+    <StackLayout Orientation="Vertical" VerticalOptions="End" BackgroundColor="Black">
+
+
+
+
+        <Label Text="party name:" x:Name="Party" TextColor="White" FontSize="14" FontAttributes="Italic"/>
+        <Label Text="" x:Name="Movie" TextColor="White" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Image Source="https://aka.ms/campus.jpg" x:Name="image"  VerticalOptions="Center" />
+
+
+
+
+
+
+
+        <Grid Padding="0,20,0,20"
+        ColumnDefinitions="33.33*, 33.33*, 33.33*"
+        ColumnSpacing="8" 
+        HorizontalOptions="FillAndExpand">
+            <Button
+                Grid.Column="0"
+                Text="Dislike"
+                HorizontalOptions="FillAndExpand"
+                Clicked="Button_Clicked_disslike"
+                TextColor="White"
+                BackgroundColor="#e01507"
+            />
+            <Button
+                Grid.Column="1"
+                Text="Info"
+                HorizontalOptions="FillAndExpand"
+                Clicked="Button_Clicked_info"
+                BackgroundColor="#24bcd4"
+                TextColor="White"
+            />
+            <Button
+                Grid.Column="2"
+                Text="Like"
+                HorizontalOptions="FillAndExpand"
+                Clicked="Button_Clicked_like"
+                BackgroundColor="#1ddb23"
+                TextColor="White"
+            />
+            
+            
+            
+            
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

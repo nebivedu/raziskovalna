@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="raziskovalna2.Second">
+
+    <StackLayout  BackgroundColor="Black" Padding="20,40,20,20" >
+
+
+
+        <Label Text="party name:" x:Name="Party" TextColor="White" FontSize="14" FontAttributes="Italic"/>
+        <Label Text="Top 3 Movies" TextColor="White" VerticalOptions="Center" FontSize="24" Padding="0,30,0,0"/>
+        <Label Text="" x:Name="TopFilm1" TextColor="White" VerticalOptions="Center" FontSize="18" Padding="10,10,0,0"/>
+        <Label Text="" x:Name="TopFilm2" TextColor="White" VerticalOptions="Center" FontSize="18" Padding="10,10,0,0"/>
+        <Label Text="" x:Name="TopFilm3" TextColor="White" VerticalOptions="Center" FontSize="18" Padding="10,10,0,0"/>
+            
+            <!--<Image Source="https://aka.ms/campus.jpg" x:Name="image" WidthRequest="200" VerticalOptions="Center" />-->
+
+        <Grid Padding="0,20,0,20"
+        ColumnDefinitions="33.33*, 33.33*, 33.33*"
+        ColumnSpacing="8" 
+        HorizontalOptions="FillAndExpand"
+              VerticalOptions="End">
+
+            <Button
+                Grid.Column="0"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"
+                Text="Home"
+                WidthRequest="100"
+                TextColor="White"
+                BackgroundColor="#24bcd4"
+                Clicked="Button_Clicked_Home"
+            />
+            <Button
+                Grid.Column="1"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"
+                Text="Refresh"
+                WidthRequest="100"
+                TextColor="White"
+                BackgroundColor="#24bcd4"
+                Clicked="Button_Clicked_Refresh"
+            />
+
+
+
+
+        </Grid>
+        
+
+    </StackLayout>
+    
+
+</ContentPage>
